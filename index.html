@@ -147,6 +147,7 @@
       <h2>Let's Build Something Intelligent</h2>
       <p>Drop a message below — I respond within 48 hours.</p>
       <form id="contact-form" action="https://formspree.io/f/xgopdjal" method="post">
+        <input type="hidden" name="_subject" value="New message from portfolio">
         <div class="form-group"><input type="text" name="name" placeholder="Name *" required></div>
         <div class="form-group"><input type="email" name="email" placeholder="Email *" required></div>
         <div class="form-group"><textarea name="message" rows="4" placeholder="Tell me about the problem you're solving..."></textarea></div>
@@ -156,7 +157,7 @@
         <p id="form-error" style="display:none; color:#ff6b6b; margin-top:1rem;">Something went wrong. Please try emailing directly.</p>
       </form>
       <div class="contact-links">
-        <a href="mailto:rashid@rashidRashid.com"><i class="fas fa-envelope"></i> rashid@rashidRashid.com</a>
+        <a href="mailto:aromeni@gmail.com"><i class="fas fa-envelope"></i> aromeni@gmail.com</a>
         <a href="#"><i class="fab fa-github"></i> github.com/rashidRashid</a>
         <a href="#"><i class="fab fa-linkedin"></i> Abdul Rashid Omeni</a>
       </div>
@@ -220,30 +221,36 @@
     });
 
     // Contact form — submit via fetch to stay on page
-    const contactForm = document.getElementById('contact-form');
+    var contactForm = document.getElementById('contact-form');
     if (contactForm) {
-      contactForm.addEventListener('submit', async function(e) {
+      contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        const btn = document.getElementById('submit-btn');
+        var btn = document.getElementById('submit-btn');
+        var successMsg = document.getElementById('form-success');
+        var errorMsg = document.getElementById('form-error');
+        successMsg.style.display = 'none';
+        errorMsg.style.display = 'none';
         btn.disabled = true;
-        btn.textContent = 'Sending…';
-        try {
-          const res = await fetch(contactForm.action, {
-            method: 'POST',
-            body: new FormData(contactForm),
-            headers: { 'Accept': 'application/json' }
-          });
+        btn.innerHTML = 'Sending… <i class="fas fa-spinner fa-spin"></i>';
+        var formData = new FormData(contactForm);
+        fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        }).then(function(res) {
           if (res.ok) {
             contactForm.reset();
-            document.getElementById('form-success').style.display = 'block';
+            successMsg.style.display = 'block';
           } else {
-            document.getElementById('form-error').style.display = 'block';
+            errorMsg.style.display = 'block';
           }
-        } catch {
-          document.getElementById('form-error').style.display = 'block';
-        }
-        btn.disabled = false;
-        btn.innerHTML = 'Send message <i class="fas fa-paper-plane"></i>';
+          btn.disabled = false;
+          btn.innerHTML = 'Send message <i class="fas fa-paper-plane"></i>';
+        }).catch(function() {
+          errorMsg.style.display = 'block';
+          btn.disabled = false;
+          btn.innerHTML = 'Send message <i class="fas fa-paper-plane"></i>';
+        });
       });
     }
 
