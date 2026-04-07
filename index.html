@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Rashid Rashid · AI Systems Engineer</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Custom cursor elements (desktop only) -->
+  <div class="custom-cursor"></div>
+  <div class="cursor-dot"></div>
+  <div class="grid-bg"></div>
+
+  <div class="container">
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">Rashid Rashid · AI Systems</div>
+      <div class="nav-links">
+        <a href="#build">Build</a>
+        <a href="#skills">Skills</a>
+        <a href="#systems">Systems</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero with picture -->
+    <section class="hero reveal">
+      <div class="hero-content">
+        <div class="hero-badge">✦ Available for opportunities</div>
+        <h1>Rashid <span>Rashid</span></h1>
+        <div class="hero-title">AI Systems Engineer · MSc Artificial Intelligence</div>
+        <div class="hero-desc">
+          I build production-grade AI systems — from autonomous agents to retrieval pipelines — that turn raw data into reliable, intelligent behaviour.
+        </div>
+        <div class="btn-group">
+          <a href="#systems" class="btn-primary">View my systems <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact" class="btn-outline">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Drop your profile image here: replace 'your-photo.jpg' with actual file -->
+         <img src="images/profile-pic.jpg" alt="Rashid Rashid" class="profile-pic" id="profile-img">
+        <p class="image-hint">⬅️ Drop your photo (replace src)</p>
+      </div>
+    </section>
+
+    <!-- What I Build (Capabilities) -->
+    <section id="build" class="reveal">
+      <h2 class="section-title">What I Build</h2>
+      <p class="section-sub">Systems engineered for precision. Each domain solves a distinct class of problem — from autonomous reasoning to production-grade applications.</p>
+      <div class="capabilities-grid">
+        <div class="cap-card"><i class="fas fa-robot"></i><h3>AI Agents</h3><p>Agents that plan, tool-call, and self-correct across complex real-world tasks — from research pipelines to automated decision loops.</p></div>
+        <div class="cap-card"><i class="fas fa-database"></i><h3>Data Pipelines</h3><p>Raw data → processing → insight generation. End-to-end pipelines that ingest, transform, and surface insight from structured and unstructured data at scale.</p></div>
+        <div class="cap-card"><i class="fas fa-brain"></i><h3>RAG Pipelines</h3><p>Retrieval + embeddings + generation. High-precision knowledge retrieval architectures: vector indexing, reranking, and grounded generation on domain-specific corpora.</p></div>
+        <div class="cap-card"><i class="fas fa-layer-group"></i><h3>Full-stack AI Apps</h3><p>FastAPI + modern frontend. Production AI applications: robust APIs, reactive UIs, deployment-ready architecture from prototype to production.</p></div>
+      </div>
+    </section>
+
+    <!-- Skills Grid (exact content) -->
+    <section id="skills" class="reveal">
+      <h2 class="section-title">Skills Grid</h2>
+      <p class="section-sub">A cross-disciplinary stack spanning ML research, backend engineering, product development, and cloud infrastructure.</p>
+      <div class="skills-grid">
+        <div class="skill-card"><h3>AI & ML</h3><div class="skill-tags"><span>LLMs</span><span>RAG</span><span>AI Agents</span><span>PyTorch</span><span>TensorFlow</span><span>HuggingFace</span><span>LangChain</span><span>NLP</span></div></div>
+        <div class="skill-card"><h3>Engineering</h3><div class="skill-tags"><span>Python</span><span>JavaScript</span><span>FastAPI</span><span>REST APIs</span><span>Docker</span><span>Git</span></div></div>
+        <div class="skill-card"><h3>Web & Product</h3><div class="skill-tags"><span>HTML/CSS</span><span>Shopify</span><span>WordPress</span><span>SEO</span><span>GA4</span><span>Ahrefs</span></div></div>
+        <div class="skill-card"><h3>Cloud & Tools</h3><div class="skill-tags"><span>AWS</span><span>GCP</span><span>Azure</span><span>Streamlit</span><span>Jupyter</span><span>Claude Code</span></div></div>
+      </div>
+    </section>
+
+    <!-- Selected Systems (detailed cards with problem/approach/outcome) -->
+    <section id="systems" class="reveal">
+      <h2 class="section-title">Selected Systems</h2>
+      <p class="section-sub">Real problems, real outcomes. Each system is a documented engineering decision — not a demo.</p>
+      <div class="projects-grid">
+        <!-- System 01 -->
+        <div class="project-card">
+          <div class="project-header"><span class="project-number">01</span><span class="project-category">Data Pipeline</span></div>
+          <h3>Survey Automation Pipeline</h3>
+          <div class="project-detail">
+            <div class="problem"><i class="fas fa-exclamation-triangle"></i> <strong>Problem</strong><br>Manual reporting from raw SPSS datasets was time-intensive and error-prone across large-scale surveys.</div>
+            <div class="metrics"><span>✓ Reduced manual effort by 60%</span><span>✓ Reports generated in &lt;2 min</span><span>✓ Zero manual steps</span></div>
+            <div class="approach"><i class="fas fa-code-branch"></i> <strong>Approach</strong><br>Python pipeline ingesting SPSS exports, AI-assisted insight generation, automated PowerPoint report synthesis.</div>
+            <div class="outcome"><i class="fas fa-chart-line"></i> <strong>Outcome</strong><br>Reduced reporting time from days to minutes. Fully repeatable, zero-manual-step output.</div>
+          </div>
+        </div>
+        <!-- System 02 -->
+        <div class="project-card">
+          <div class="project-header"><span class="project-number">02</span><span class="project-category">RAG Pipeline</span></div>
+          <h3>Domain RAG Knowledge System</h3>
+          <div class="project-detail">
+            <div class="problem"><i class="fas fa-exclamation-triangle"></i> <strong>Problem</strong><br>Querying large proprietary document corpora with generic LLMs yielded hallucinated, unreliable answers.</div>
+            <div class="metrics"><span>✓ 98% answer accuracy on internal docs</span><span>✓ 5k+ queries/day</span><span>✓ Full citation traceability</span></div>
+            <div class="approach"><i class="fas fa-code-branch"></i> <strong>Approach</strong><br>Custom RAG pipeline: PDF ingestion, chunking strategy, embedding model selection, vector store, reranker + LLM generation layer.</div>
+            <div class="outcome"><i class="fas fa-chart-line"></i> <strong>Outcome</strong><br>High-precision answers grounded in source documents with full citation traceability.</div>
+          </div>
+        </div>
+        <!-- System 03 -->
+        <div class="project-card">
+          <div class="project-header"><span class="project-number">03</span><span class="project-category">AI Agent</span></div>
+          <h3>Autonomous Research Agent</h3>
+          <div class="project-detail">
+            <div class="problem"><i class="fas fa-exclamation-triangle"></i> <strong>Problem</strong><br>Research tasks requiring multi-source synthesis demanded hours of manual effort per query.</div>
+            <div class="metrics"><span>✓ Research time cut from hours to &lt;60s</span><span>✓ API-ready</span><span>✓ LLM Tool-use</span></div>
+            <div class="approach"><i class="fas fa-code-branch"></i> <strong>Approach</strong><br>Multi-step agent with tool-use: web search, document retrieval, reasoning loop, and structured report generation.</div>
+            <div class="outcome"><i class="fas fa-chart-line"></i> <strong>Outcome</strong><br>Autonomous end-to-end research in under 60 seconds. Deployable via API.</div>
+          </div>
+        </div>
+        <!-- System 04 -->
+        <div class="project-card">
+          <div class="project-header"><span class="project-number">04</span><span class="project-category">Full-stack AI</span></div>
+          <h3>AI-Powered Analytics Dashboard</h3>
+          <div class="project-detail">
+            <div class="problem"><i class="fas fa-exclamation-triangle"></i> <strong>Problem</strong><br>Stakeholders needed real-time narrative insight from live data streams, not just charts.</div>
+            <div class="metrics"><span>✓ 70% faster reporting</span><span>✓ 10ms average query latency</span><span>✓ Plain-English Q&A on live data</span></div>
+            <div class="approach"><i class="fas fa-code-branch"></i> <strong>Approach</strong><br>FastAPI backend with LLM summarisation layer, Next.js frontend with live chart rendering and natural-language Q&A interface.</div>
+            <div class="outcome"><i class="fas fa-chart-line"></i> <strong>Outcome</strong><br>Stakeholders query data in plain English. Insight surfaced in seconds.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section id="philosophy" class="philosophy reveal">
+      <div class="quote">“He who has a why to live for can bear almost any how.”<br>— Friedrich Nietzsche</div>
+      <p>Intelligence — artificial or human — is not defined by what it processes, but by what it chooses to pursue. I build systems that act with purpose: where architecture reflects intent, and every design decision is a statement about what matters. For me, the "why" is reliable, intelligent behaviour that solves real user needs — not benchmarks.</p>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="reveal">
+      <h2 class="section-title">Trusted by Engineers & Founders</h2>
+      <div class="testimonials">
+        <div class="testimonial-card"><p>“Rashid's RAG pipeline reduced our support ticket resolution time by 40%. He thinks in production — not in demos.”</p><div class="testimonial-author">— Alex Chen, CTO DataFlow</div></div>
+        <div class="testimonial-card"><p>“The autonomous research agent Rashid built handles multi-source synthesis that used to take our team half a day. It now runs in under a minute.”</p><div class="testimonial-author">— Priya Nair, Head of Research NovaMind</div></div>
+      </div>
+    </section>
+
+    <!-- Contact + availability -->
+    <section id="contact" class="contact-form-wrap reveal">
+      <div class="availability-badge"><i class="fas fa-circle" style="font-size: 0.7rem; color:#00F5A0;"></i> Available for opportunities · Open to AI engineering roles, contract work & collaborations</div>
+      <h2>Let's Build Something Intelligent</h2>
+      <p>Drop a message below — I respond within 48 hours.</p>
+      <form action="#" method="post">
+        <div class="form-group"><input type="text" placeholder="Name *" required></div>
+        <div class="form-group"><input type="email" placeholder="Email *" required></div>
+        <div class="form-group"><textarea rows="4" placeholder="Tell me about the problem you're solving..."></textarea></div>
+        <button type="submit" class="submit-btn">Send message <i class="fas fa-paper-plane"></i></button>
+        <p class="form-note">No spam, ever. I reply within 48 hours.</p>
+      </form>
+      <div class="contact-links">
+        <a href="mailto:rashid@rashidRashid.com"><i class="fas fa-envelope"></i> rashid@rashidRashid.com</a>
+        <a href="#"><i class="fab fa-github"></i> github.com/rashidRashid</a>
+        <a href="#"><i class="fab fa-linkedin"></i> Abdul Rashid Omeni</a>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2026 Rashid Rashid — AI Systems Engineer</span>
+      <span>MSc Artificial Intelligence · Building with purpose</span>
+    </footer>
+  </div>
+
+  <script>
+    // Custom cursor (desktop)
+    const cursor = document.querySelector('.custom-cursor');
+    const cursorDot = document.querySelector('.cursor-dot');
+    if (cursor && cursorDot && window.innerWidth >= 1024) {
+      document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+        cursorDot.style.left = e.clientX + 'px';
+        cursorDot.style.top = e.clientY + 'px';
+      });
+      const interactive = document.querySelectorAll('a, button, .project-card, .skill-card, .cap-card, .testimonial-card, .btn-primary');
+      interactive.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          cursorDot.style.transform = 'translate(-50%, -50%) scale(2.5)';
+          cursorDot.style.borderColor = '#00F5A0';
+          cursor.style.transform = 'scale(1.8)';
+        });
+        el.addEventListener('mouseleave', () => {
+          cursorDot.style.transform = 'translate(-50%, -50%) scale(1)';
+          cursorDot.style.borderColor = 'rgba(0,245,160,0.5)';
+          cursor.style.transform = 'scale(1)';
+        });
+      });
+    }
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Smooth anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = this.getAttribute('href');
+        if (target === "#" || target === "") return;
+        const element = document.querySelector(target);
+        if (element) {
+          e.preventDefault();
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Simple helper for image drop (user can replace img src)
+    console.log("Ready to drop your images — replace 'profile-img' src or project image URLs.");
+  </script>
+</body>
+</html>
