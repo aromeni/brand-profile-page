@@ -273,19 +273,56 @@ nav {
 
 /* philosophy */
 .philosophy {
-  background: radial-gradient(ellipse at 30% 40%, rgba(0,245,160,0.03), transparent);
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  background:
+    linear-gradient(135deg, rgba(0,245,160,0.07), transparent 38%),
+    #080808;
   padding: 3rem;
   margin: 3rem 0;
-  border-radius: 40px;
+  border-radius: 32px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.philosophy-portrait {
+  width: 180px;
+  height: 180px;
+  padding: 0.35rem;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #00F5A0, rgba(34,211,238,0.5));
+  box-shadow: 0 0 36px rgba(0,245,160,0.14);
+}
+.philosophy-portrait img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale(1) contrast(1.05);
+  border: 4px solid #080808;
 }
 .quote {
-  font-size: 1.6rem;
+  font-size: clamp(1.55rem, 3vw, 2.3rem);
   font-style: italic;
-  color: #00F5A0;
+  color: #F4F4F4;
   margin-bottom: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
+  line-height: 1.35;
 }
-.philosophy p { max-width: 800px; color: #ccc; line-height: 1.6; }
+.quote span {
+  display: inline-block;
+  margin-top: 0.7rem;
+  color: #00F5A0;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.philosophy p {
+  max-width: 760px;
+  color: #B8B8B8;
+  line-height: 1.65;
+}
 
 /* testimonials */
 .testimonials {
@@ -490,7 +527,16 @@ footer {
   .nav-links { gap: 1.2rem; }
   .profile-pic { width: 200px; height: 200px; }
   .projects-grid { grid-template-columns: 1fr; }
-  .philosophy { padding: 1.5rem; }
+  .philosophy {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+  .philosophy-portrait {
+    width: 150px;
+    height: 150px;
+  }
   .success-dialog {
     min-height: 420px;
     padding: 4rem 1.5rem 2rem;
